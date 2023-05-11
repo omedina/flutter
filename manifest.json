@@ -1,7 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "calmCanary",
+  "name": "flutter",
+  "description": "This extension neutralizes your Twitter feed using OpenAI.",
   "version": "0.1",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -10,5 +15,20 @@
       "128": "images/icon128.png"
     }
   },
-  "permissions": ["activeTab", "scripting"]
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/icon128.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

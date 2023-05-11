@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Options</title>
+  </head>
+  <body>
+    <h1>API Key</h1>
+    <input type="text" id="apiKey" placeholder="Enter your API key">
+    <button id="saveButton">Save</button>
+    <p id="message" style="display: none;"></p>
+
+    <!-- Transformation Section -->
+    <h1>Transformations</h1>
+    <select id="transformationSelect">
+      <option value="calmTweetBot">Calm Tweet Bot</option>
+      <!-- Add more transformations as options here -->
+    </select>
+    <input type="hidden" id="transformationPrompt" value='You are calmTweetBot, an AI designed to make tweets more understanding and objective. Maintain the core ideas the tweet is trying to communicate. Your goal is to foster understanding and reduce hostility among readers.'>
+    <button id="addTransformationButton">Add Transformation</button>
+    <ul id="transformationsList">
+      <!-- Added transformations will be displayed here -->
+    </ul>
+
+    <script src="options.js"></script>
+  </body>
+</html>
+
