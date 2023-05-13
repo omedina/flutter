@@ -1,0 +1,32 @@
+.dropdown {
+    position: absolute;
+    top: 15px;
+    left: -100px;
+    width: 0;
+    height: 0;
+    background-color: white;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 0 0.5rem black;
+    filter: drop-shadow(0 0 0.5rem black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    text-shadow: 0 0 0.1rem black;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}

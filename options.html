@@ -11,11 +11,11 @@
 
     <!-- Transformation Section -->
     <h1>Transformations</h1>
-    <select id="transformationSelect">
-      <option value="calmTweetBot">Calm Tweet Bot</option>
-      <!-- Add more transformations as options here -->
+    <input type="text" id="transformationName" placeholder="Enter transformation name">
+    <input type="text" id="transformationPrompt" placeholder="Enter transformation prompt">
+    <select id="iconDropdown">
+        <!-- Available icons will be loaded here -->
     </select>
-    <input type="hidden" id="transformationPrompt" value='You are calmTweetBot, an AI designed to make tweets more understanding and objective. Maintain the core ideas the tweet is trying to communicate. Your goal is to foster understanding and reduce hostility among readers.'>
     <button id="addTransformationButton">Add Transformation</button>
     <ul id="transformationsList">
       <!-- Added transformations will be displayed here -->
@@ -24,4 +24,3 @@
     <script src="options.js"></script>
   </body>
 </html>
-

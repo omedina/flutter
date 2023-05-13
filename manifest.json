@@ -3,6 +3,9 @@
   "name": "flutter",
   "description": "This extension neutralizes your Twitter feed using OpenAI.",
   "version": "0.1",
+  "background": {
+    "service_worker": "background.js"
+  },
   "permissions": [
     "storage",
     "activeTab"
@@ -27,7 +30,11 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["images/icon128.png"],
+      "resources": ["images/*.png"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["images/icons/*.svg"],
       "matches": ["<all_urls>"]
     }
   ]
