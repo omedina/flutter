@@ -36,6 +36,10 @@
     {
       "resources": ["images/icons/*.svg"],
       "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["styles.css"],
+      "matches": ["<all_urls>"]
     }
   ]
 }
