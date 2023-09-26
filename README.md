@@ -1,3 +1,4 @@
+## Description
 This demo extension was designed to look at possible applications that could better help humans
 communicate or at least make communication more entertaining. Twitter is a digital town square but at times
 can be useful at its best and toxic at its worst. To play around with human commnuciation,
@@ -6,7 +7,8 @@ entertaining.
 
 This demo uses OpenAI's API so you'll need one to test things out.
 
-Installation:
+
+## Installation
 Download and unzip the flutter repo.
 
 Enter chrome://extensions/ into the chrome browser's URL
